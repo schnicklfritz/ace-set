@@ -32,7 +32,7 @@ RUN pip3 install numpy==1.26.4 scipy pandas huggingface_hub transformers acceler
 RUN pip3 install urllib3==2.7.0 pillow==12.2.0 filelock==3.20.3
 
 # 6. Pull the official repository into the environment root directory
-RUN git clone https://github.com https://github.com/ace-step/ACE-Step-1.5.git
+RUN git clone https://github.com/ace-step/ACE-Step-1.5.git
 
 # 7. Force-recompile any local C-extensions to adhere to the hardened NumPy 2.x ABI
 RUN if [ -f setup.py ]; then python3 setup.py build_ext --inplace; fi
