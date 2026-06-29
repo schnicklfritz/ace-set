@@ -1,0 +1,90 @@
+# Python cache and build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.iml
+
+# Project-specific: large model checkpoints
+checkpoints/
+*.ckpt
+*.pth
+*.safetensors
+*.bin
+*.onnx
+*.pb
+
+# Downloaded data and outputs
+outputs/
+results/
+logs/
+*.log
+tmp/
+temp/
+
+# Sensitive / environment files
+.env
+*.env
+.env.local
+.env.*.local
+secrets/
+*.key
+*.pem
+
+# Docker related (keep for version control but not built artifacts)
+docker-compose.override.yml
+*.dockerignore
+
+# OS junk files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Test / coverage
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+
+# Notebooks (if you want to exclude temporary outputs)
+.ipynb_checkpoints/
+*.ipynb
+
+# Large media / audio files
+*.mp3
+*.wav
+*.flac
+*.aac
+*.ogg
+*.m4a
+*.mp4
+*.avi
+*.mov
+
+# ACE-Step specific
+portable/
+python_embeded/
+acestep/__pycache__/
+*.tmp
+*.cache
