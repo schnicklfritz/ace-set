@@ -24,6 +24,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 WORKDIR /workspace
 
 # 5. HARDENED LAYER: Lock down modern package tools and NumPy 2.x compat layers
+RUN python3 -m venv /venv
+ENV PATH="/venv/bin:$PATH"
 RUN pip3 install --upgrade pip "setuptools==75.3.4" "wheel==0.47.0"
 RUN pip3 install "pybind11>=2.12.0" "cython>=3.0.0"
 RUN pip3 install numpy==1.26.4 scipy pandas huggingface_hub transformers accelerate hf_transfer
