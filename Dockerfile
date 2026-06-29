@@ -16,7 +16,7 @@ ENV DEBIAN_FRONTEND=noninteractive \
 # 3. Install core system audio utilities and compilers
 RUN apt-get update && apt-get install -y --no-install-recommends \
     git curl nano \
-    ffmpeg \
+    ffmpeg python3.12-venv \
     build-essential \
     && rm -rf /var/lib/apt/lists/*
 
