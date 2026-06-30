@@ -41,4 +41,4 @@ RUN if [ -f setup.py ]; then python3 setup.py build_ext --inplace; fi
 EXPOSE 7860
 
 # Default execution command to launch the server natively via PyTorch backend
-CMD ["python3", "start_api_server.py"]
+CMD ["python3", "-m", "acestep.serve.gradio_app"]
