@@ -10,7 +10,7 @@ ENV DEBIAN_FRONTEND=noninteractive \
     MAX_CUDA_VRAM=24000 \
     DIT_MODEL=base \
     ENABLE_LLM=true \
-    HF_HUB_ENABLE_HF_TRANSFER=1 \
+    HF_HUB_ENABLE_HF_TRANSFER=0 \
     PIP_EXTRA_INDEX_URL="https://pytorch.org"
 
 # 3. Install core system audio utilities and compilers
